@@ -61,3 +61,23 @@ cpp// S: p_v := 0
 - Múltiplas fontes: Inicia de todos os vértices livres em S
 - Grafo expandido: Inclui arestas do matching com peso 0 (direção T→S)
 - Filtragem de arestas: Evita arestas já no matching na direção S→T
+
+## Métricas de teste
+### 1. Métricas de Caminho (path_metrics.csv)
+- path_length: Comprimento do caminho aumentante (varia!)
+- dijkstra_iterations: Quantos nós foram processados (eficiência)
+- queue_operations: Push/pop na priority queue (complexidade)
+- potential_updates: Quantas atualizações de distância (convergência)
+- min_slack: Menor slack encontrado (proximidade da otimalidade)
+- tight_edges_count: Arestas no subgrafo de igualdade (estrutura)
+
+### 2. Métricas de Iteração (iteration_metrics.csv)
+- matching_size: Crescimento do matching (0→10)
+- avg_potential_s/t: Evolução dos potenciais (convergência)
+- equality_edges: Tamanho do subgrafo de igualdade (estrutura)
+
+### 3. Métricas Escalabilidade (main_metrics.csv)
+- time_per_vertex: Tempo por vértice (escalabilidade)
+- time_per_edge: Tempo por aresta (eficiência)
+- max_path_length: Maior caminho encontrado (complexidade)
+- convergence_rate: Taxa de convergência (performance)

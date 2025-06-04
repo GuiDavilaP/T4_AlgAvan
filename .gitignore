@@ -1,6 +1,7 @@
 /data
 /bin
 /obj
+/results
 *.o
 *.out
 *~
