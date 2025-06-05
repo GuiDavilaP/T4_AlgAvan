@@ -32,6 +32,9 @@ struct ScalabilityMetrics {
     double time_per_edge;           // Tempo por aresta
     int max_path_length;            // Maior caminho encontrado
     double convergence_rate;        // Taxa de convergência
+    double avg_tree_depth;
+    double potential_variance;
+    double tight_edges_ratio;
 };
 
 struct AlgorithmMetrics {

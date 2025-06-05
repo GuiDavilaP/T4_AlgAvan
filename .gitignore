@@ -2,7 +2,9 @@
 /bin
 /obj
 /results
+/venv
 *.o
 *.out
 *~
+*.log
 .vscode/
